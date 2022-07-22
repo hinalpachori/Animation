@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <style>
+        .parent
+        {
+            background-color: brown;
+            height: 120px;
+            width: 120px;
+        }
+        .child
+        {
+            background-color: aqua;
+            height: 50px;
+            width: 50px;
+            transition: transform 1s ease-in;
+            animation: left-to-right  1s ease-in forwards infinite alternate
+        
+        }
+       .parent:hover
+        .child
+        {
+            background-color: blueviolet;
+           
+            animation-play-state: paused;
+            /*animation: left-to-right  1s ease-in forwards 3 alternate ;/*1s is the duration time ease-in is the timing function
+            3s is the delay forward is use for stay there and 3 times they repeat
+            and alternate usee it start again with their position
+            1-st time go forward 2nd time go backward and 3rd time go forward
+            if the animation always running so we put the animation cod on child*/
+            
+        }
+        @keyframes left-to-right 
+        {
+            0%
+            {
+                background-color: aqua;
+                transform: translateX(0);
+            }
+            33%
+            {   background-color: chartreuse;
+                transform: translateY(100%);
+
+            }
+            50%
+            {
+                background-color: darksalmon;
+            }
+            66%
+            {
+                background-color: coral;
+                transform:translateX(100%) translateY(100%) ;
+            }
+            100%
+            {
+                background-color: darkblue;
+                transform: translateX(100%);
+            }
+        }
+        
+    </style>
+
+    <div class="parent">
+        <div class="child">
+
+        </div>
+    </div>
+</head>
+<body>
+
+
+</body>
+</html>
