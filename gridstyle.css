@@ -1,0 +1,35 @@
+.gitem
+{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightcoral;
+    border:2px solid rgb(7, 36, 7);
+    padding:3px;
+    margin:5px;
+}
+.gcontainer
+{   
+    display: grid;
+    grid-template-columns:200px 250px;/*first row is 200 and second row is 250px size */
+    grid-auto-rows: minmax(300px,auto);/* minimum size is 300px and max is auto)*/
+     /*grid-template-rows: 200px 500px /*-for first rows size is 200 another row is normal;*/
+    /*automatically adjust anotherr rows of this size;*/
+    grid-row-gap:20px; /*gap between rows*/
+    grid-column-gap: 20px;/* gap between column*/
+    /*grid-gap:40px gap bet for both rows and column*/
+    /*justify-content: end;
+    align-content: center;
+   height: 100vh;
+   */
+   justify-items: stretch;
+   align-items: stretch;
+
+}
+
+.item1
+{
+    align-self: center;
+    justify-self: center;
+}
+
+
